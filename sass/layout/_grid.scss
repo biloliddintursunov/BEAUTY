@@ -1,0 +1,80 @@
+.special-offers{
+    margin-bottom: 10rem;
+    h3{
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.123;
+        margin-bottom: 3.8rem;
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+        @include responsive(big-tables){
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include responsive(middle-tables){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include responsive(big-phone){
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $white-color;
+        padding: 2.5rem 3rem;
+        img{
+            width: 12.5rem;
+            height: 16.6rem;
+            object-fit: contain;
+            margin-bottom: 2rem;
+            @include responsive(middle-tables){
+                width: 13.5rem;
+                height: 18.6rem;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+            line-height: 1.4;
+            color: $text-color;
+            text-align: center;
+            margin-bottom: 2rem;
+            @include responsive(middle-tables){
+                font-size: 1.8rem;
+            }
+        }
+        span{
+            font-weight: 500;
+            font-size: 2.1rem;
+            line-height: 1.025;
+            margin-bottom: 2rem;
+            letter-spacing: 5%;
+            @include responsive(middle-tables){
+                font-size: 2.5rem;
+            }
+        }
+        button{
+            font-size: 1.4rem;
+            line-height: 1.17;
+            color: $white-color;
+            background: $brand-color;
+            padding: .9rem 3rem;
+            border-radius: 3rem;
+            border: none;
+            outline: none;
+            @include responsive(middle-tables){
+                font-size: 1.8rem;
+                padding: 1rem 4rem;
+            }
+            @include responsive(big-phone){
+                padding: 1.2rem 6.5rem;
+            }
+        }
+    }
+}

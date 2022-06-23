@@ -1,0 +1,6 @@
+.site-main{
+    background: $gray-color;
+}
+.container{
+@include container(1150px);
+}

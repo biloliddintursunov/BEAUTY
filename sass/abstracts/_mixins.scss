@@ -1,0 +1,70 @@
+// container styles mixins
+@mixin container($width) {
+  width: 100%;
+  max-width: $width;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+// site text styles mixins
+@mixin site-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $text-color;
+}
+@mixin small-title {
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1.4;
+  letter-spacing: 0.48;
+  color: $text-color;
+}
+
+// responsive
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == m-phone) {
+    @media only screen and (max-width: 400px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == big-phone) {
+    @media only screen and (max-width: 630px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == tables) {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == middle-tables) {
+    @media only screen and (max-width: 887px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == big-tables) {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == desktop) {
+    @media only screen and (max-width: 1210px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == large-desktop) {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }@if ($breakpoint == monitor) {
+    @media only screen and (max-width: 1600px) {
+      @content;
+    }
+  }
+}

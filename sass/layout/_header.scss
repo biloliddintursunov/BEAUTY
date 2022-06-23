@@ -1,0 +1,199 @@
+// site header styles
+.site-header {
+}
+
+// site header top styles
+
+.site-header-top {
+  padding: 1.6rem 0;
+  background: $gray-color;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    .site-header-top__item:not(:last-child){
+      margin-right: 3rem;
+      @include responsive(phone) {
+        margin-right: .5rem;
+      }
+    }
+    @include responsive(phone) {
+      justify-content: space-around;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.17;
+    color: $text-color;
+    @include responsive(phone) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// site header top styles end
+
+// site header contact styles
+
+.site-header-contact {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $gray-color;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+    a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-right: 2rem;
+      display: flex;
+      @include responsive(phone) {
+        width: 6rem;
+        height: 6rem;
+      }
+      @include responsive(m-phone) {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+    span {
+      font-weight: 700;
+      font-size: 3.6rem;
+      line-height: 1.16;
+      letter-spacing: 0.1em;
+      color: $brand-color;
+      @include responsive(phone) {
+        font-size: 3.2rem;
+      }
+      @include responsive(m-phone) {
+        font-size: 2.9rem;
+      }
+    }
+  }
+  .search-btn {
+    padding: 0.5rem 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    @include responsive(monitor) {
+      display: none;
+    }
+    @include responsive(tables) {
+      display: flex;
+    }
+    @include responsive(m-phone) {
+      padding: 0.5rem 1.8rem;
+    }
+  }
+  form {
+    width: 100%;
+    max-width: 25rem;
+    height: 4.1rem;
+    background: $form-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    @include responsive(tables) {
+      display: none;
+    }
+    img {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      margin-right: 1rem;
+    }
+    input {
+      border: none;
+      outline: none;
+      background: $form-bg-color;
+    }
+  }
+  button {
+    cursor: pointer;
+  }
+  .tel {
+    font-size: 1.6rem;
+    color: $black-color;
+    border: none;
+    outline: none;
+    background: transparent;
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  .call-back {
+    padding: 1.2rem 2.6rem;
+    border: 1px solid $brand-color;
+    border-radius: 4rem;
+    background: transparent;
+    outline: none;
+    @include responsive(big-tables) {
+      display: none;
+    }
+  }
+}
+
+// site header contact styles end
+
+// site header sitenav
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  @include responsive(big-phone) {
+    display: none;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    li:not(:last-child) {
+      margin-right: 4rem;
+    }
+    a {
+      text-decoration: none;
+      color: $black-color;
+    }
+  }
+}
+
+// site header sitenav end
+
+// header burger
+.site-burger {
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
+    @include responsive(phone) {
+      display: flex;
+    }
+    @include responsive(monitor) {
+      display: none;
+    }
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: contain;
+    }
+  }
+  .sitenav-menu {
+    @include responsive(big-phone) {
+      display: flex;
+    }
+  }
+}
