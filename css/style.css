@@ -145,6 +145,107 @@ body {
   }
 }
 
+.delivery {
+  margin-bottom: 10rem;
+}
+.delivery__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .delivery__card {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .delivery__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 2fr);
+  }
+}
+.delivery__card-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f13c6e;
+  padding: 3rem 3.5rem;
+  color: #fff;
+  background: #f13c6e url(../images/svg/email.svg) no-repeat;
+  background-position: center;
+  background-size: 100% 90%;
+}
+@media only screen and (max-width: 887px) {
+  .delivery__card-wrapper {
+    background-size: 100% 75%;
+  }
+}
+@media only screen and (max-width: 887px) {
+  .delivery__card-wrapper {
+    background-size: 100% 70%;
+  }
+}
+.delivery__card-wrapper:last-child {
+  background: #f13c6e url(../images/svg/expres.svg) no-repeat;
+  background-position: center;
+  background-size: 100% 90%;
+}
+@media only screen and (max-width: 887px) {
+  .delivery__card-wrapper:last-child {
+    background-size: 100% 75%;
+  }
+}
+@media only screen and (max-width: 887px) {
+  .delivery__card-wrapper:last-child {
+    background-size: 100% 70%;
+  }
+}
+.delivery__text-wrapper {
+  margin-right: auto;
+}
+.delivery__text-wrapper h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.17;
+  margin-bottom: 2.5rem;
+}
+.delivery__text-wrapper p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 2.5rem;
+}
+.delivery__text-wrapper img {
+  width: 10rem;
+}
+.delivery__text-wrapper form {
+  width: 25rem;
+  height: 3.5rem;
+  background: #fff;
+  border-radius: 3rem;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .delivery__text-wrapper form {
+    width: 20rem;
+    height: 3rem;
+  }
+}
+.delivery__text-wrapper form input {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  outline: none;
+  border: none;
+}
+.delivery__text-wrapper a {
+  font-size: 1.4rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.9rem 2.8rem;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
 .site-header-top {
   padding: 1.6rem 0;
   background: #e5e5e5;
