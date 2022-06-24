@@ -90,12 +90,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 3rem;
-    @include responsive(tables){ 
-        gap: 1rem;
+    @include responsive(tables) {
+      gap: 1rem;
     }
-    @include responsive(big-phone){ 
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 2fr);
+    @include responsive(big-phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 2fr);
     }
   }
   &__card-wrapper {
@@ -107,22 +107,22 @@
     background: $brand-color url(../images/svg/email.svg) no-repeat;
     background-position: center;
     background-size: 100% 90%;
-    @include responsive(middle-tables){
-        background-size: 100% 75%;
+    @include responsive(middle-tables) {
+      background-size: 100% 75%;
     }
-    @include responsive(middle-tables){
-        background-size: 100% 70%;
+    @include responsive(middle-tables) {
+      background-size: 100% 70%;
     }
   }
   &__card-wrapper:last-child {
     background: $brand-color url(../images/svg/expres.svg) no-repeat;
     background-position: center;
     background-size: 100% 90%;
-    @include responsive(middle-tables){
-        background-size: 100% 75%;
+    @include responsive(middle-tables) {
+      background-size: 100% 75%;
     }
-    @include responsive(middle-tables){
-        background-size: 100% 70%;
+    @include responsive(middle-tables) {
+      background-size: 100% 70%;
     }
   }
   &__text-wrapper {
@@ -147,13 +147,13 @@
       background: $white-color;
       border-radius: 3rem;
       position: relative;
-      @include responsive(tables){
-       width: 20rem;
-       height: 3rem;
-    }
+      @include responsive(tables) {
+        width: 20rem;
+        height: 3rem;
+      }
       input {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 10%;
         outline: none;
         border: none;
