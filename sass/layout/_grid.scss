@@ -172,3 +172,27 @@
 }
 
 // delivery end
+
+// impuls section styles
+
+.impuls {
+  margin-bottom: 8rem;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .1rem;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+  }
+  &__item {
+    background: $white-color;
+    padding: 3.5rem 6.5rem;
+    img{
+      display: flex;
+    }
+  }
+}
+
+// impuls section styles end

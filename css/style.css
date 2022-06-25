@@ -247,6 +247,26 @@ body {
   text-transform: uppercase;
 }
 
+.impuls {
+  margin-bottom: 8rem;
+}
+.impuls__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.1rem;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+.impuls__item {
+  background: #fff;
+  padding: 3.5rem 6.5rem;
+}
+.impuls__item img {
+  display: flex;
+}
+
 .site-header-top {
   padding: 1.6rem 0;
   background: #e5e5e5;
